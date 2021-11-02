@@ -110,8 +110,11 @@ Now here you can see that lots of string separation and joins are working togeth
 There are some cases where we want to set the same version number on a set of objects. 
 
 For example: If you want to save your publications file in S3 and the object key looks like “Publication_list/Plants_growth.docx” and you also want to add a statistic file with key name “Publication_list/Plants_growth_statistics.xlsx” which has statistics described/mentioned in the Plants_growth.docx file then every time you upgrade your statistics  you also have to made changes in your publication document. In this case you have to keep the same version number on both of the files. 
+
 Here’s the solution. Instead of appending the version number in your file name it is better to add the version number in your object key. 
+
 Like: Publication_list/1/Plants_growth_statistics.xlsx and Publication_list/1/Plants_growth.docx
+
 1 is the version number and you can get this number without disturbing the file name. This method is very efficient in such a case as it manatin the same number on all the relevant files and also its retrieval is also easy compared to previous method. It is not efficient to apply in the previous section scenario. 
 
 Sample code is given below. 
