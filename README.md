@@ -152,6 +152,6 @@ There can be multiple methods to add versioning object wise. These are my method
 
 In this blog we have covered what AWS S3 service is and its advantages. AWS S3 being a great storage service provider, we still face trouble in Object specific versioning. So we have found out our own solution with two different cases. One where every object is following their own version and later one is when more than one object is following the same version number. 
 
-That’s it for now . If you have something else that is not covered in this then let me know in the comments below. 
+That’s it for now . If you have something else that is not covered in this then let me know.
 Happy Reading!! 
 
